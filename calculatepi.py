@@ -21,7 +21,11 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
-t = int(input("I will estimate pi. How many terms should I use?"))
-d = int(input("How many decimal places should I use in the result?"))
+import math
+n = int(input("I will estimate e. How many terms should I use? "))
+decimals = int(input("How many decimal places should I use in the result? "))
+pi = 4*sum([((-1.0**k)/math.factorial(2*k+1) for k in range (o,n)])
+print("The approximate value of e is {0}".format(round(e, decimals)))
+print("(The true value of e is {0})".format(round(math.e, decimals)))
 
 print("Note: remember that the printed value of pi will be an estimate!")
